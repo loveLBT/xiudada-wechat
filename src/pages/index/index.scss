@@ -1,0 +1,98 @@
+@import '../../style/default.scss';
+
+.page {
+	@extend .flex-column;
+	.bb-line {
+		border-bottom: 1px solid #ccc;
+	}
+	.swiper {
+		background-color: $primary;
+		.img {
+			width: 100%;
+		}
+	}
+	.menu {
+		@extend .flex-column;
+		.title {
+			@extend .flex-row-ac;
+			height: 70px;
+			border-bottom: 1px solid #ccc;
+			.line {
+				height: 50px;
+				width: 6px;
+				background-color: $primary;
+			}
+			.txt {
+				color: $txt-color;
+				margin-left: 20px;
+				font-size: 28px;
+			}
+		}
+		.list {
+			@extend .flex-row;
+			flex-wrap: wrap;
+			padding-top: 20px;
+			border-bottom: 1px solid #ccc;
+			.item {
+				@extend .flex-column;
+				align-items: center;
+				width: 25%;
+				.img {
+					height: 100px;
+					width: 100px;
+				}
+				.txt {
+					color: $txt-color;
+					font-size: 28px;
+					padding-top: 15px;
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+	.service-info {
+		@extend .flex-row;
+		padding: 30px 60px;
+		.img {
+			width: 100px;
+			height: 100px;
+		}
+		.info {
+			@extend .flex-column;
+			margin-left: 30px;
+			justify-content: space-around;
+			.txt-row {
+				@extend .flex-row;
+				.label {
+					font-size: 28px;
+					color: #333;
+				}
+				.value {
+					font-size: 28px;
+					color: $primary;
+				}
+			}
+		}
+	}
+	.service-desc {
+		@extend .service-info;
+		margin-top: 30px;
+		color: #999;
+		font-size: 28px;
+	}
+	.service-appointment {
+		padding: 15px 60px;
+		border-top: 2px solid #ccc;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-sizing: border-box;
+	}
+	.no-result {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+}

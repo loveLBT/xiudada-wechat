@@ -1,0 +1,16 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+	.label {
+		width: 168px;
+		font-size:28px;
+		color: #666;
+	}
+	.value {
+		flex: 1;
+		font-size:28px;
+		color: #666;
+	}
+}

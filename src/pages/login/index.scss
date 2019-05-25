@@ -1,0 +1,58 @@
+@import '../../style/default.scss';
+
+.page {
+	@extend .flex-column;
+	.header {
+		@extend .flex-column-ac;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		.img {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 30px;
+		}
+		.txt {
+			font-size: 32px;
+			color: #666;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	.tab {
+		margin-left: 80px;
+		margin-right: 80px;
+		.pwd-login {
+			margin-top: 40px;
+			.remember {
+				margin-top: 20px;
+				@extend .flex-row-ac;
+				justify-content: space-between;
+				.checkbox {
+					color: #999;
+					font-size: 28px;
+				}
+				.txt {
+					font-size: 28px;
+					color: $primary;
+				}
+			}
+		}
+		.code-login {
+			margin-top: 40px;
+		}
+	} 
+	.submit {
+		@extend .tab;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.tip {
+		text-align: center;
+		font-size: 24px;
+		color: $primary;
+	}
+}
+.imgCode {
+	width: 120px;
+	height: 60px;
+}

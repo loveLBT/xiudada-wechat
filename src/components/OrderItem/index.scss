@@ -1,0 +1,55 @@
+@import '../../style/default.scss';
+
+.order-item {
+	@extend .flex-column;
+	position: relative;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	.title {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 32px;
+		color: $primary;
+		margin-bottom: 15px;
+	}
+	.txt {
+		font-size: 28px;
+		color: #999;
+		margin-bottom: 15px;
+	}
+	.icon-row {
+		@extend .flex-row-ac;
+		.txt {
+			margin-top: 4px;
+			margin-bottom: 0;
+			margin-left: 15px;
+		}
+	}
+	.cancel-btn {
+		border-top: 2px solid #ccc;
+		@extend .flex-row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+		padding-top: 15px;
+		padding-bottom: 30px;
+		.btn-txt {
+			font-size:32px;
+			color: #333;
+			margin-top: 4px;
+			padding-left: 15px;
+		}
+	}
+	.status {
+		display: block;
+		position: absolute;
+		top: 75px;
+		right: 30px;
+		font-size:28px;
+		color: $primary;
+	}
+}

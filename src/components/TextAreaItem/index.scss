@@ -1,0 +1,21 @@
+.textarea-item {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	.title {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 24px;
+		.required {
+			color: red;
+			margin-right: 10px;
+		}
+		.txt {
+			color: #333;
+			font-size: 32px;
+		}
+	}
+}
+.border {
+	border-bottom: 2px solid #ccc;
+} 

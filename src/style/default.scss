@@ -1,0 +1,22 @@
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+.flex-row-ac {
+	@extend .flex-row;
+	align-items: center;
+}
+.flex-row-jc {
+	@extend .flex-row;
+	justify-content: center;
+}
+.flex-column-ac {
+	@extend .flex-column;
+	align-items: center
+}
+$primary: #3ccba6;
+$txt-color: #333;

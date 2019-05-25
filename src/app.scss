@@ -1,0 +1,16 @@
+@import './style/custom-variables.scss';
+$bg-color: #f8f8f8;
+
+page {
+	background-color: $bg-color;
+}
+.index {
+  	display: flex;
+  	flex-direction: column;
+}
+.at-input {
+	background-color: $bg-color;
+}
+.at-tabs__header {
+	background-color: $bg-color;
+}

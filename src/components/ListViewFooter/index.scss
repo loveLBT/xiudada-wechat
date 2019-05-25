@@ -1,0 +1,15 @@
+.footer-view {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	.txt {
+		font-size: 28px;
+		color: #999;
+	}
+	.loading-txt {
+		@extend .txt;
+		padding-left: 12px; 
+	}
+}

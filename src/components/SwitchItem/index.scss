@@ -1,0 +1,19 @@
+.switch-item {
+	border-bottom: 2px solid #ccc;
+	padding: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	.title {
+		width: 164px;
+		.required {
+			color: red;
+			margin-right: 10px;
+		}
+		.txt {
+			color: #333;
+			font-size: 32px;
+		}
+	}
+}

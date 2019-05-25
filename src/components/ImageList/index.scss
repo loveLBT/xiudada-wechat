@@ -1,0 +1,19 @@
+.img-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.img {
+		width: 165px;
+		height: 165px;
+		margin-bottom: 12px;
+	}
+	.img:nth-child(4n+1){
+		margin-right: 12px;
+	}
+	.img:nth-child(4n+2){
+		margin-right: 12px;
+	}
+	.img:nth-child(4n+3){
+		margin-right: 12px;
+	}
+}
